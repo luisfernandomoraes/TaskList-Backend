@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Supero.TaskList.Data\Supero.TaskList.Data.csproj" />
+    <ProjectReference Include="..\Supero.TaskList.Domain\Supero.TaskList.Domain.csproj" />
+    <ProjectReference Include="..\Supero.TaskList.Service\Supero.TaskList.Service.csproj" />
+  </ItemGroup>
+
+</Project>

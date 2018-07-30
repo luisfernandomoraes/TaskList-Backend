@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supero.TaskList.Data", "Supero.TaskList.Data\Supero.TaskList.Data.csproj", "{A2CF946B-CBC1-48FE-9125-EAF728D6E5DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supero.TaskList.Domain", "Supero.TaskList.Domain\Supero.TaskList.Domain.csproj", "{00A66CC4-4A2E-4FB1-83EB-AFD2BB6455A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supero.TaskList.IoC", "Supero.TaskList.IoC\Supero.TaskList.IoC.csproj", "{AF969CE0-CBA8-4DD0-AD27-E4835F5A9D41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supero.TaskList.Service", "Supero.TaskList.Service\Supero.TaskList.Service.csproj", "{90BFF540-AF94-4F5A-AD72-CC207A1A05BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supero.TaskList.Web.Framework", "Supero.TaskList.Web.Framework\Supero.TaskList.Web.Framework.csproj", "{CF148F29-1C3F-4DA9-98F6-CA4FF0BFC36C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supero.TaskList.Api", "Supero.TaskList.Api\Supero.TaskList.Api.csproj", "{9515345C-AA39-4F28-AFB0-F5205902CF75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2CF946B-CBC1-48FE-9125-EAF728D6E5DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2CF946B-CBC1-48FE-9125-EAF728D6E5DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2CF946B-CBC1-48FE-9125-EAF728D6E5DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2CF946B-CBC1-48FE-9125-EAF728D6E5DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00A66CC4-4A2E-4FB1-83EB-AFD2BB6455A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00A66CC4-4A2E-4FB1-83EB-AFD2BB6455A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00A66CC4-4A2E-4FB1-83EB-AFD2BB6455A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00A66CC4-4A2E-4FB1-83EB-AFD2BB6455A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF969CE0-CBA8-4DD0-AD27-E4835F5A9D41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF969CE0-CBA8-4DD0-AD27-E4835F5A9D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF969CE0-CBA8-4DD0-AD27-E4835F5A9D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF969CE0-CBA8-4DD0-AD27-E4835F5A9D41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90BFF540-AF94-4F5A-AD72-CC207A1A05BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90BFF540-AF94-4F5A-AD72-CC207A1A05BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90BFF540-AF94-4F5A-AD72-CC207A1A05BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90BFF540-AF94-4F5A-AD72-CC207A1A05BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF148F29-1C3F-4DA9-98F6-CA4FF0BFC36C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF148F29-1C3F-4DA9-98F6-CA4FF0BFC36C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF148F29-1C3F-4DA9-98F6-CA4FF0BFC36C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF148F29-1C3F-4DA9-98F6-CA4FF0BFC36C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9515345C-AA39-4F28-AFB0-F5205902CF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9515345C-AA39-4F28-AFB0-F5205902CF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9515345C-AA39-4F28-AFB0-F5205902CF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9515345C-AA39-4F28-AFB0-F5205902CF75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32BA5E86-599E-4AF5-A5E1-063E6CD3B34B}
+	EndGlobalSection
+EndGlobal
