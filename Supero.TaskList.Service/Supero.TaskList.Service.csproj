@@ -9,4 +9,12 @@
     <ProjectReference Include="..\Supero.TaskList.Domain\Supero.TaskList.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Bases\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flunt.Br" Version="1.1.1" />
+  </ItemGroup>
+
 </Project>

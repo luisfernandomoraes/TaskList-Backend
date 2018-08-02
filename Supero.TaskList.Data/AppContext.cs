@@ -15,11 +15,17 @@ namespace Supero.TaskList.Data
             this._connectionString = connectionString;
         }
 
+#if DEBUG
+        
+        // Utilizado somente nas migrations
+        //TODO: Encontrar uma forma melhor de passar a connection string.
         public AppContext()
         {
+            _connectionString =
+                "Data Source=127.0.0.1,1433;Initial Catalog=tasklistdb;Persist Security Info=True;User ID=sa;Password=P@ssw0rd0";
         }
+#endif
 
-       
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {            
             modelBuilder.ApplyConfiguration(new TodoItemMap());

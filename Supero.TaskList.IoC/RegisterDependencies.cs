@@ -5,7 +5,9 @@ using Supero.TaskList.Data.Repository;
 using Supero.TaskList.Domain;
 using Supero.TaskList.Domain.Interfaces;
 using Supero.TaskList.Service;
+using Supero.TaskList.Service.CommandHandlers;
 using Supero.TaskList.Service.Interfaces;
+using Supero.TaskList.Service.QueryHandlers;
 
 namespace Supero.TaskList.IoC
 {
@@ -17,6 +19,8 @@ namespace Supero.TaskList.IoC
             services.AddScoped(p => new AppContext(configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<ITodoItemService, TodoItemService>();
             services.AddScoped<IRepository<TodoItem>, Repository<TodoItem>>();
+            services.AddScoped<TodoItemQueryHandler>();
+            services.AddScoped<TodoItemCommandHandler>();
         }
     }
 }

@@ -9,5 +9,11 @@ namespace Supero.TaskList.Domain
     {
         public string Description { get; set; }
         public bool IsCompleted { get; set; }
+
+        public void ChangeInformations(string todoItemDescription, bool todoItemIsCompleted)
+        {
+            this.Description = todoItemDescription;
+            this.IsCompleted = todoItemIsCompleted;
+        }
     }
 }
