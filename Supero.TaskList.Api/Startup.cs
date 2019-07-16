@@ -15,6 +15,7 @@ using Supero.TaskList.IoC;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
+using AppContext = Supero.TaskList.Data.AppContext;
 
 namespace Supero.TaskList.Api
 {
@@ -74,13 +75,8 @@ namespace Supero.TaskList.Api
 
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
-                var context = serviceScope.ServiceProvider.GetRequiredService<Data.AppContext>();
-                if (!context.Database.EnsureCreated())
-                {
-                    RelationalDatabaseCreator databaseCreator =
-                        (RelationalDatabaseCreator)context.Database.GetService<IDatabaseCreator>();
-                    databaseCreator.CreateTables();
-                }
+                var context = serviceScope.ServiceProvider.GetRequiredService<AppContext>();
+                context.Database.EnsureCreated();
             }
 
             app.UseCors(c =>
