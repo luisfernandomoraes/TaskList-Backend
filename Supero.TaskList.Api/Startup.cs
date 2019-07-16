@@ -72,7 +72,7 @@ namespace Supero.TaskList.Api
                 app.UseDeveloperExceptionPage();
             }
 
-            /*using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
+            using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetRequiredService<Data.AppContext>();
                 if (!context.Database.EnsureCreated())
@@ -81,7 +81,7 @@ namespace Supero.TaskList.Api
                         (RelationalDatabaseCreator)context.Database.GetService<IDatabaseCreator>();
                     databaseCreator.CreateTables();
                 }
-            }*/
+            }
 
             app.UseCors(c =>
             {

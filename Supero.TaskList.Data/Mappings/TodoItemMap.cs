@@ -9,6 +9,7 @@ namespace Supero.TaskList.Data.Mappings
         public void Configure(EntityTypeBuilder<TodoItem> builder)
         {            
             builder.Property(c => c.Id)
+                .UseSqlServerIdentityColumn()
                 .HasColumnName("Id");
 
             builder.Property(c => c.Description)
